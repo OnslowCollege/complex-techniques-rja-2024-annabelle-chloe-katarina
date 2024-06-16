@@ -1,5 +1,8 @@
 {
     "image": "ghcr.io/onslowcollege/swifttemplate:latest",
+    "features": {
+        "ghcr.io/devcontainers-contrib/features/mysql-homebrew": {}  
+    },
     "customizations": {
         "vscode": {
             "extensions": [
@@ -72,5 +75,6 @@
                 }
             }
         }
-    }
+    },
+    "postCreateCommand": "mint install vapor/toolbox"
 }

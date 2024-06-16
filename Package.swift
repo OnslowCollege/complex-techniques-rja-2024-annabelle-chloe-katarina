@@ -1,39 +1,48 @@
-// swift-tools-version: 5.9
+// swift-tools-version:5.10
 import PackageDescription
 
 let package = Package(
-    name: "CombinedProject",
+    name: "HuaHeihei",
     platforms: [
-        .macOS(.v10_15)
+       .macOS(.v13)
     ],
     dependencies: [
-        // Dependencies from both packages.
-        .package(url: "https://github.com/pvieito/PythonKit.git", .exact("0.3.1")),
-        .package(url: "https://github.com/OnslowCollege/OCGUI.git", .exact("0.0.6")),
-        .package(url: "https://github.com/vapor/vapor", from: "4.32.0"),
-        .package(url: "https://github.com/vapor/leaf", .exact("4.0.0-tau.1")),
-        .package(url: "https://github.com/vapor/leaf-kit", .exact("1.0.0-tau.1.1")),
+        // 💧 A server-side Swift web framework.
+        .package(url: "https://github.com/vapor/vapor.git", from: "4.99.3"),
+        // 🗄 An ORM for SQL and NoSQL databases.
+        .package(url: "https://github.com/vapor/fluent.git", from: "4.9.0"),
+        // 🐬 Fluent driver for MySQL.
+        .package(url: "https://github.com/vapor/fluent-mysql-driver.git", from: "4.4.0"),
+        // 🍃 An expressive, performant, and extensible templating language built for Swift.
+        .package(url: "https://github.com/vapor/leaf.git", from: "4.3.0"),
+        // 🔵 Non-blocking, event-driven networking for Swift. Used for custom executors
+        .package(url: "https://github.com/apple/swift-nio.git", from: "2.65.0"),
     ],
     targets: [
-        // Targets from both packages.
         .executableTarget(
-            name: "OCProgram",
+            name: "App",
             dependencies: [
-                .product(name: "PythonKit", package: "PythonKit"),
-                .product(name: "OCGUI", package: "OCGUI")
+                .product(name: "Fluent", package: "fluent"),
+                .product(name: "FluentMySQLDriver", package: "fluent-mysql-driver"),
+                .product(name: "Leaf", package: "leaf"),
+                .product(name: "Vapor", package: "vapor"),
+                .product(name: "NIOCore", package: "swift-nio"),
+                .product(name: "NIOPosix", package: "swift-nio"),
             ],
-            swiftSettings: [
-                .enableUpcomingFeature("BareSlashRegexLiterals")
-            ]
+            swiftSettings: swiftSettings
         ),
-        .target(name: "App", dependencies: [
-            .product(name: "Leaf", package: "leaf"),
-            .product(name: "Vapor", package: "vapor"),
-        ]),
-        .target(name: "Run", dependencies: ["App"]),
-        .testTarget(name: "AppTests", dependencies: [
-            .target(name: "App"),
-            .product(name: "XCTVapor", package: "vapor"),
-        ])
+        .testTarget(
+            name: "AppTests",
+            dependencies: [
+                .target(name: "App"),
+                .product(name: "XCTVapor", package: "vapor"),
+            ],
+            swiftSettings: swiftSettings
+        )
     ]
 )
+
+var swiftSettings: [SwiftSetting] { [
+    .enableUpcomingFeature("DisableOutwardActorInference"),
+    .enableExperimentalFeature("StrictConcurrency"),
+] }

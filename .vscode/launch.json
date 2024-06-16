@@ -23,6 +23,30 @@
             "args": [],
             "cwd": "${workspaceFolder:SwiftTemplate}",
             "preLaunchTask": "swift: Build Release OCProgram"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "sourceLanguages": [
+                "swift"
+            ],
+            "args": [],
+            "cwd": "${workspaceFolder:complex-techniques-rja-2024-annabelle-chloe-katarina}",
+            "name": "Debug App",
+            "program": "${workspaceFolder:complex-techniques-rja-2024-annabelle-chloe-katarina}/.build/debug/App",
+            "preLaunchTask": "swift: Build Debug App"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "sourceLanguages": [
+                "swift"
+            ],
+            "args": [],
+            "cwd": "${workspaceFolder:complex-techniques-rja-2024-annabelle-chloe-katarina}",
+            "name": "Release App",
+            "program": "${workspaceFolder:complex-techniques-rja-2024-annabelle-chloe-katarina}/.build/release/App",
+            "preLaunchTask": "swift: Build Release App"
         }
     ]
 }
