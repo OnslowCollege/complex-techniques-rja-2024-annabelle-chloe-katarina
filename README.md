@@ -13,3 +13,7 @@ This template includes:
 ## How to run your code
 
 Once your Codespace has loaded, click on the Run File button in the status bar.
+
+## Commands to run
+
+- mint install vapor/toolbox
