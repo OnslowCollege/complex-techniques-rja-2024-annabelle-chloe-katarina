@@ -2,13 +2,18 @@ import Fluent
 import Vapor
 
 func routes(_ app: Application) throws {
-    app.get { req async throws in
-        try await req.view.render("index", ["title": "Hello Vapor!"])
+    // Landing page
+    app.get { req -> EventLoopFuture<View> in
+        return req.view.render("index")
     }
 
-    app.get("hello") { req async -> String in
-        "Hello, world!"
+    // Product page for eggs
+    app.get("eggs") { req -> EventLoopFuture<View> in
+        return req.view.render("eggs")
     }
-
-    try app.register(collection: TodoController())
+    
+    // Cart page
+    app.get("cart") { req -> EventLoopFuture<View> in
+        return req.view.render("cart")
+    }
 }

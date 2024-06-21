@@ -1,12 +1,11 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="utf-8">
-
-  <title>#(title)</title>
+    <title>HuaHeiHei - Home</title>
 </head>
-
 <body>
-  <h1>#(title)</h1>
+    <h1>Welcome to HuaHeiHei</h1>
+    <p>Explore our selection of eggs!</p>
+    <a href="/eggs">View Eggs</a>
 </body>
 </html>

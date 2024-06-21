@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HuaHeiHei - Cart</title>
+</head>
+<body>
+    <h1>Your Shopping Cart</h1>
+    <p>No items in your cart.</p>
+    <a href="/eggs">Continue Shopping</a>
+</body>
+</html>
