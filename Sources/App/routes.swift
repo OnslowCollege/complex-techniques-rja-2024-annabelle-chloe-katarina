@@ -1,10 +1,12 @@
 import Fluent
 import Vapor
 
-func routes(_ app: Application) throws {
-    // Route for the login page
-    app.get("login") { req -> EventLoopFuture<View> in
+struct LoginController: RouteCollection {
+    func boot(routes: RoutesBuilder) throws {
+        routes.get("Login Form Design", use: loginHandler)
+    }
+
+    func loginHandler(req: Request) throws -> EventLoopFuture<View> {
         return req.view.render("login")
     }
 }
-
