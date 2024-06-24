@@ -1,3 +1,3 @@
 CREATE TABLE testtable (name varchar(50));
 
-USE testtable;
+USE test.sql;
