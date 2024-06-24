@@ -6,30 +6,6 @@
             "sourceLanguages": [
                 "swift"
             ],
-            "name": "Debug OCProgram",
-            "program": "${workspaceFolder:SwiftTemplate}/.build/debug/OCProgram",
-            "args": [],
-            "cwd": "${workspaceFolder:SwiftTemplate}",
-            "preLaunchTask": "swift: Build Debug OCProgram"
-        },
-        {
-            "type": "lldb",
-            "request": "launch",
-            "sourceLanguages": [
-                "swift"
-            ],
-            "name": "Release OCProgram",
-            "program": "${workspaceFolder:SwiftTemplate}/.build/release/OCProgram",
-            "args": [],
-            "cwd": "${workspaceFolder:SwiftTemplate}",
-            "preLaunchTask": "swift: Build Release OCProgram"
-        },
-        {
-            "type": "lldb",
-            "request": "launch",
-            "sourceLanguages": [
-                "swift"
-            ],
             "args": [],
             "cwd": "${workspaceFolder:complex-techniques-rja-2024-annabelle-chloe-katarina}",
             "name": "Debug App",
