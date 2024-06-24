@@ -1,8 +1,5 @@
 {
     "image": "ghcr.io/onslowcollege/swifttemplate:latest",
-    "features": {
-        "ghcr.io/devcontainers-contrib/features/mysql-homebrew": {}  
-    },
     "customizations": {
         "vscode": {
             "extensions": [
@@ -17,7 +14,7 @@
                 "usernamehw.errorlens",
                 "aaron-bond.better-comments",
                 "vsls-contrib.gitdoc",
-                "seunlanlege.action-buttons",
+                "seunlanlege.action-buttons"
             ],
             "settings": {
                 "apple-swift-format.path": [
@@ -76,5 +73,5 @@
             }
         }
     },
-    "postCreateCommand": "mint install vapor/toolbox"
+    "postCreateCommand": "apt update -y && apt install -y mysql-server && mint install vapor/toolbox"
 }
