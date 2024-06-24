@@ -1,3 +1,1 @@
-CREATE DATABASE testdb;
-USE testdb;
-CREATE TABLE testtable;
+CREATE TABLE testtable ( name varchar(50) );
