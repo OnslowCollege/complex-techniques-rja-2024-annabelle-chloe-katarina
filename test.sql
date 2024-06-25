@@ -7,6 +7,6 @@ CREATE TABLE user_2 (name varchar(50));
 SHOW DATABASES;
 
 USE egg_shop;
-
+SHOW TABLES;
 
 
