@@ -1,0 +1,75 @@
+* [33m25e2663[m[33m ([m[1;36mHEAD -> [m[1;32mdatabase[m[33m, [m[1;31morigin/database[m[33m)[m Jun 26, 2024, 10:33 PM
+* [33md02c633[m Jun 25, 2024, 9:27 AM
+* [33m2a04fd3[m Jun 25, 2024, 9:26 AM
+* [33m12518aa[m Jun 25, 2024, 9:24 AM
+* [33m9aa94cd[m Jun 25, 2024, 9:20 AM
+* [33m80c23b5[m Jun 25, 2024, 9:18 AM
+* [33m8f8df50[m Jun 25, 2024, 9:18 AM
+* [33m25a0dc0[m Jun 25, 2024, 2:31 AM
+* [33ma083396[m Jun 25, 2024, 12:01 AM
+* [33m412cb1a[m Jun 24, 2024, 11:56 PM
+* [33m89cde9a[m Jun 24, 2024, 11:53 PM
+* [33m07c9eee[m Jun 24, 2024, 11:51 PM
+* [33m8ac2b2b[m Jun 24, 2024, 11:47 PM
+* [33m926759d[m Jun 24, 2024, 11:38 PM
+* [33m1cdc13b[m Jun 24, 2024, 11:34 PM
+* [33m537e195[m Jun 24, 2024, 11:32 PM
+* [33m26cd11c[m Jun 24, 2024, 11:30 PM
+* [33m5c7e097[m Jun 24, 2024, 11:27 PM
+* [33m5c12d08[m Jun 24, 2024, 11:25 PM
+* [33ma46d527[m Jun 24, 2024, 11:24 PM
+* [33m52f9402[m Jun 24, 2024, 11:22 PM
+* [33m15ba52a[m Jun 24, 2024, 11:18 PM
+* [33m3083fd6[m Jun 24, 2024, 11:07 PM
+* [33me7be611[m Jun 24, 2024, 11:06 PM
+* [33mbcf0e44[m Jun 24, 2024, 11:02 AM
+* [33md53e89d[m Jun 24, 2024, 11:01 AM
+* [33m0eb32f5[m Jun 24, 2024, 10:55 AM
+* [33mb6e60f2[m 24/06/24 - Raw SQL test run
+* [33m9cc5cbc[m Jun 24, 2024, 12:29 AM
+* [33mf593017[m Jun 24, 2024, 12:27 AM
+* [33m585cfe1[m Jun 24, 2024, 12:25 AM
+* [33mc356106[m Jun 24, 2024, 12:04 AM
+[31m|[m * [33m0d9e1aa[m[33m ([m[1;31morigin/website[m[33m)[m Jun 25, 2024, 2:38 AM
+[31m|[m * [33medb3a42[m Jun 25, 2024, 2:36 AM
+[31m|[m * [33m4aebf9e[m Jun 25, 2024, 2:33 AM
+[31m|[m * [33m901de3b[m Jun 25, 2024, 2:31 AM
+[31m|[m * [33med27985[m Jun 25, 2024, 2:29 AM
+[31m|[m * [33mbfc8e31[m Jun 25, 2024, 2:26 AM
+[31m|[m * [33mff21e65[m Jun 24, 2024, 12:11 AM
+[31m|[m * [33m36dcaff[m Jun 24, 2024, 12:10 AM
+[31m|[m * [33m1fae2df[m Jun 24, 2024, 12:08 AM
+[31m|[m * [33md4cbad8[m Jun 24, 2024, 12:06 AM
+[31m|[m * [33m747d16c[m Jun 23, 2024, 11:55 PM
+[31m|[m * [33m9c87d7b[m Jun 23, 2024, 11:53 PM
+[31m|[m * [33m92ba751[m Jun 23, 2024, 11:38 PM
+[31m|[m * [33m69d1ea8[m Jun 23, 2024, 11:34 PM
+[31m|[m * [33ma02fba6[m Jun 23, 2024, 11:32 PM
+[31m|[m * [33m23dfc5b[m Jun 23, 2024, 11:20 PM
+[31m|[m * [33mac62c15[m Jun 21, 2024, 1:58 AM
+[31m|[m * [33m524709b[m Jun 21, 2024, 1:48 AM
+[31m|[m * [33mfddbdb5[m Jun 21, 2024, 1:47 AM
+[31m|[m * [33m4004537[m Jun 21, 2024, 1:46 AM
+[31m|[m * [33m89676e0[m Jun 21, 2024, 1:45 AM
+[31m|[m * [33m47e5275[m Jun 21, 2024, 1:41 AM
+[31m|[m * [33m62bc4c6[m Jun 21, 2024, 12:27 AM
+[31m|[m * [33m719ade4[m Jun 21, 2024, 12:24 AM
+[31m|[m * [33m5159722[m Jun 21, 2024, 12:21 AM
+[31m|[m[31m/[m  
+* [33mf0cd939[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/code[m[33m)[m Created Vapor template
+* [33m327f0fb[m Jun 16, 2024, 11:22 PM
+* [33m3d702e3[m Jun 13, 2024, 11:38 PM
+* [33mb490e83[m Jun 13, 2024, 11:33 PM
+* [33mb3696a5[m Jun 13, 2024, 11:26 PM
+* [33m7144178[m Remove desktop lite
+* [33m98f63d1[m Add desktop lite for GUI apps
+* [33m280fb4a[m Simplify file structure
+* [33m1a3b099[m Remove SPM project support
+* [33mf68f6d4[m Remove explicit OC references
+* [33m2574343[m Add PDF viewer
+* [33m45846b5[m Add new action buttons
+* [33m8761554[m Update README.md
+* [33mdfae030[m Add swift-sh action button, remove colours
+* [33mcaef9f7[m Add useful buttons to toolbar
+* [33mfcbf181[m Create tasks.json to run one file at a time
+* [33m06b8aca[m Initial commit
