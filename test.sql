@@ -1,18 +1,19 @@
 -- Create egg shop database.
 CREATE DATABASE egg_shop;
 
+-- show all the databases created
+SHOW DATABASES;
+
 -- Create table 'user_2'.
 CREATE TABLE user_2 (
     id INT UNSIGNED AUTO_INCREMENT NOT NULL PRIMARY KEY
 );
 
--- Show all the databases created.
-SHOW DATABASES;
+USE egg_shop;  -- uses the egg shop database
 
-USE egg_shop;
+SHOW TABLES;  -- shows table of chosen database
 
-SHOW TABLES;
+DESCRIBE user_2;  -- shows the columns of table 'user_2'
 
-DESCRIBE user_2;
-
-ALTER TABLE user_2 ADD last_name VARCHAR(50) NOT NULL
+ALTER TABLE user_2 ADD first_name VARCHAR(50) NOT NULL  -- adds new column first name
+ALTER TABLE user_2 ADD last_name VARCHAR(50) NOT NULL  -- adds new column last name
