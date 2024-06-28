@@ -14,3 +14,5 @@ USE egg_shop;
 SHOW TABLES;
 
 DESCRIBE user_2;
+
+ALTER TABLE user_2 ADD first_name VARCHAR(50) NOT NULL
