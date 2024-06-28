@@ -12,3 +12,5 @@ SHOW DATABASES;
 USE egg_shop;
 
 SHOW TABLES;
+
+DESCRIBE user_2;
