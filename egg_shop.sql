@@ -8,7 +8,7 @@
 -- Table structure for table `user`
 --
 
-DROP TABLE IF EXISTS `user`;
+-- creates the table 'user' in the database
 CREATE TABLE `user` (
   `user_id` int unsigned NOT NULL AUTO_INCREMENT,
   `first_name` varchar(50) NOT NULL,
