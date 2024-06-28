@@ -10,8 +10,8 @@
 
 -- creates the table 'user' in the database
 CREATE TABLE `user` (
-  `user_id` int unsigned NOT NULL AUTO_INCREMENT,
-  `first_name` varchar(50) NOT NULL,
-  `last_name` varchar(50) NOT NULL,
-  PRIMARY KEY (`user_id`)
+  `user_id` int unsigned NOT NULL AUTO_INCREMENT,  -- creates a coloumn 'user_id'
+  `first_name` varchar(50) NOT NULL,  -- creates a column 'first_name'
+  `last_name` varchar(50) NOT NULL,  -- creates a column 'last_name'
+  PRIMARY KEY (`user_id`)  -- sets user_id as the primary key
 )
