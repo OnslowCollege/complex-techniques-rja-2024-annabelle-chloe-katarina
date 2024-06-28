@@ -47,7 +47,10 @@ DROP TABLE IF EXISTS `user_2`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `user_2` (
-  `name` varchar(50) DEFAULT NULL
+  `id` int unsigned NOT NULL AUTO_INCREMENT,
+  `first_name` varchar(50) NOT NULL,
+  `last_name` varchar(50) NOT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -68,10 +71,11 @@ DROP TABLE IF EXISTS `user_3`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `user_3` (
-  `id` int unsigned NOT NULL AUTO_INCREMENT COMMENT 'Primary Key',
-  `first_name` varchar(50) NOT NULL COMMENT 'User first name',
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  `user_id` int NOT NULL AUTO_INCREMENT COMMENT 'Primary Key',
+  `first_name` varchar(50) NOT NULL COMMENT 'users first name',
+  `last_name` varchar(50) NOT NULL COMMENT 'users first name',
+  PRIMARY KEY (`user_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='the users unique id';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -92,4 +96,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-06-28  2:01:27
+-- Dump completed on 2024-06-28  7:38:40

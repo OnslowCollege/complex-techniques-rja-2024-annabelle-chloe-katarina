@@ -4,7 +4,7 @@ CREATE DATABASE egg_shop;
 -- show all the databases created
 SHOW DATABASES;
 
--- Create table 'user_2'.
+-- create table 'user_2' with column 'id'
 CREATE TABLE user_2 (
     id INT UNSIGNED AUTO_INCREMENT NOT NULL PRIMARY KEY
 );
